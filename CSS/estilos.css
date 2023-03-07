@@ -1,0 +1,222 @@
+/* Inicializo reseteando los valores predeterminados*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* le doy formato al navbar, centrando, dejandolo en negrita y en color negro*/
+.formatoNavbar {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+/*Incluyo foto de portada al Index y doy display flex para que el titulo pueda quedar centrado*/
+.portada {
+    background-image: url("../IMAGES/portadaIndex.jpg");
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* le doy formato al rectangulo del titulo de la portada*/
+.portada h2 {
+    font-size: 150%;
+    color: white;
+    border-radius: 2%;
+    padding: 0.8%;
+    background-color: rgba(255, 166, 0, 0.8);
+    position: relative;
+    top: 35%;
+}
+/* le doy formato a los titulos de las pages de mi website*/
+.titles {
+    text-align: center;
+    margin: 3%;
+}
+/* le doy formato a los enlaces de mi website*/
+.enlace {
+    text-decoration: none;
+    color: black;
+}
+
+.fondoServiciosIndex{
+    background-color: burlywood;
+}
+/* le doy formato al button que aparece en el seccion servicios del index*/
+.index__ButtonServicios {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+}
+/* le doy formato al mapa del index para que quede centrado*/
+.index__Mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+
+/*le doy formato al footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+/* le doy formato a la ul que aparece en el footer*/
+.footer__items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+/* le doy fondo a la page nosotros, le digo a los hijos que se formen en 3 filas de 2 columnas y que se alineen al centro*/
+.nosotros{
+    background-color: rgba(255, 166, 0, 0.548);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 5%;
+    margin-bottom: 5%;
+}
+/* le doy formato a las imagenes de la seccion nosotros*/
+.nosotros img{
+    border-radius: 3%;
+    text-align: center;
+    width: 80%;
+    margin: 3%;
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 4%;
+}
+/*Creo estilo de los servicios__card*/
+.servicios__card {
+    background-color: burlywood;
+    width: 90%;
+    border-radius: 5%;
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* le doy el ancho maximo a cubrir por las cards en la pagina servicios*/
+.servicios__card__image {
+    width: 100%;
+    text-align: center;
+}
+/* le doy formato al button de las cards servicios*/
+.servicios__card__button {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0.5%;
+}
+/*le doy fondo a la page formulario y le digo a los hijos que se alineen al centro en 1 columna*/
+.formulario {
+    background-color: rgba(255, 166, 0, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*le doy formato a los item del formulario*/
+.formulario__item {
+    padding: 0.5%;
+    width: 40%;
+    margin: 0.5%;
+}
+
+.btn{
+    margin: 3%;
+}
+
+.animacion:hover{
+    background-color: orange;
+    color: white;
+    margin: 5px;
+    border-radius: 3px;
+    transform:scale(1.2) translate(0,-5px);
+   
+}
+.animacion{
+    transition: 0.7s;
+}
+
+.portadaAnimacion{
+    animation-name: animacionPortada;
+    animation-duration: 2s;
+
+}
+
+@keyframes animacionPortada{
+    0%{
+
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+
+    }
+}
+
+.scaleCardService:hover{
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+
+
+
+/* Aplico mediaquerys a tamaño de pantalla L; cambio distribución del grid*/
+
+
+
+@media screen and (max-width: 992px) {
+    .nosotros{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .servicios{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .servicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-inline: 15%;
+    }
+}

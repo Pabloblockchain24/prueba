@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agrego el titulo que aparecera en el navegador-->
+    <title>TRANSPORTES CURRIN</title>
+    <!-- Agrego favicon-->
+    <link rel="shortcut icon" href="../IMAGES/logoSitio.png" type="image/x-icon">
+    <!-- En la siguiente linea enlazamos el html al css-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <!-- Enlazo mi html al CDN de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Creo barra de navegación con bootstrap, modifico centrado de barra y formato de texto con clase propia "formatoNavbar"-->
+    <header class="formatoNavbar">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html"><img src="../IMAGES/logoSitio.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item animacion">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item animacion">
+                        <a class="nav-link" href="../PAGES/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item animacion">
+                        <a class="nav-link" href="../PAGES/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item animacion">
+                        <a class="nav-link" href="../PAGES/clientes.html">CLIENTES</a>
+                    </li>
+                    <li class="nav-item animacion">
+                        <a class="nav-link" href="../PAGES/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- creo titulo y le doy formato con clase titles-->
+        <h2 class="titles"> SERVICIOS </h2>
+
+        
+        <div class="servicios">
+                <div class="servicios__card scaleCardService">
+                    <img src="../IMAGES/serviciosRetiros.jpg" class="servicios__card__image">
+                    <h4> RETIROS DE PUERTO</h4>
+                    <p class="paragraph"> Servicio de retiro en puerto que incluye presentación en puerto,
+                        previa coordinación con agencias de aduana, retiro en puerto y
+                        traslado a deposito o a cliente</p>
+                    <a href="../PAGES/contacto.html" class="servicios__card__button enlace"> Solicitar cotización</a>
+                </div>
+                <div class="servicios__card scaleCardService">
+                    <img src="../IMAGES/serviciosAlmacenamiento.jpg" class="servicios__card__image">
+                    <h4>ALMACENAMIENTO DE CARGA</h4>
+                    <p class="paragraph"> Servicio de almacenamiento de carga, en contenedor o desconsolidada, en patio
+                        o en bodega dependiendo de la naturaleza de la carga y los requerimientos del
+                        cliente.</p>
+                    <a href="../PAGES/contacto.html" class="servicios__card__button enlace"> Solicitar cotización</a>
+                </div>
+                <div class="servicios__card scaleCardService">
+                    <img src="../IMAGES/serviciosDesconsolidado.jpeg" class="servicios__card__image">
+                    <h4>DESCONSOLIDADOS</h4>
+                    <p class="paragraph"> Servicio de desconsolidado de carga y su posterior carguio a rampla de camion,
+                        o traslado a zona de bodegas para ser almacenada hasta que cliente requiera el traslado a
+                        destino
+                        final.</p>
+                    <a href="../PAGES/contacto.html" class="servicios__card__button enlace"> Solicitar cotización</a>
+                </div>
+
+                <div class="servicios__card scaleCardService">
+                    <img src="../IMAGES/serviciosEntregas.jpeg" class="servicios__card__image">
+                    <h4>ENTREGAS EN CLIENTE</h4>
+                    <p class="paragraph"> Entregas en centros de distribucion o tiendas finales de clientes, según
+                        indicacion de cliente,
+                        hora de presentación indicada y tiempo de descarga estimada.</p>
+                    <a href="../PAGES/contacto.html" class="servicios__card__button enlace"> Solicitar cotización</a>
+                </div>
+                <div class="servicios__card scaleCardService">
+                    <img src="../IMAGES/serviciosVacios.jpg" class="servicios__card__image">
+                    <h4>DEVOLUCION DE VACIOS </h4>
+                    <p class="paragraph"> Servicio de devolución de contenedores vacios, ya sea retirandolos desde
+                        depoisto
+                        del transporte dado que carga fue
+                        desconsolidada o posterior a la entrega en destino final, para las cargas full.</p>
+                    <a href="../PAGES/contacto.html" class="servicios__card__button enlace"> Solicitar cotización</a>
+                </div>
+                <div class="servicios__card scaleCardService">
+                    <img src="../IMAGES/serviciosRespaldo.jpg" class="servicios__card__image">
+                    <h4>RESPALDO OPERACIONES</h4>
+                    <p class="paragraph"> Cada servicio realizado por transportes Currin, cuenta con respaldos que
+                        acreditan
+                        el estado en el que se recibio la carga,
+                        estado en el que se entrego, guias de despacho timbradas, y cualquier otro que sea requerido por
+                        cliente.</p>
+                    <a href="../PAGES/contacto.html" class="servicios__card__button enlace"> Solicitar cotización</a>
+                </div>
+        </div>
+    </main>
+
+    <!--A continuación agrego el footer que estara presente en todas las paginas-->
+    <footer class="footer">
+        <p> 2023 || Todos los derechos reservados</p>
+        <ul class="footer__items">
+            <li> Numero contacto: +569 50727028</li>
+            <li> E-mail contacto: parcepaiva@gmail.com</li>
+            <li> <a class="enlace" href="../PAGES/contacto.html"> Envianos tu solicitud </a> </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
